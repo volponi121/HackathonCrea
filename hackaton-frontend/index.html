@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Negociações</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="js/">
+</head>
+
+<body class="container">
+
+    <h1>Requisições</h1>
+
+    <br>
+    <br>
+    <label for="filtrar-tabela">Filtre:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite...">
+    <table class="striped highlight">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela-dados">
+            <tr class="nome">
+                <td class="info-nome">Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr class="nome">
+                <td class="info-nome">Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr class="nome">
+                <td class="info-nome">Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <button id="botao-importa" class="btn btn-primary" type="button">Importar</button>
+
+    <div id="negociacoesView"></div>
+</body>
+<script src="js/filtra.js"></script>
+
+</html>
