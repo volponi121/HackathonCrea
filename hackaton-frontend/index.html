@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Negociações</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="js/">
 </head>
 
 <body class="container">
-    
-    <form class="form">
-        
-        <div class="form-group">
-            <label for="data">Data</label>
-            <input type="date" id="data" class="form-control" required autofocus/>        
-        </div>    
-        
-        <div class="form-group">
-            <label for="quantidade">Quantidade</label>
-            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required/>
-        </div>
-        
-        <div class="form-group">
-            <label for="valor">Valor</label>
-            <input id="valor" type="number" class="form-control"  min="0.01" step="0.01" value="0.0" required />
-        </div>
 
-        <button id="botao-importa" class="btn btn-primary" type="button">Importar</button>
-    </form>
+    <h1>Requisições</h1>
 
     <br>
     <br>
+    <label for="filtrar-tabela">Filtre:</label>
+    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite...">
+    <table class="striped highlight">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela-dados">
+            <tr class="nome">
+                <td class="info-nome">Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr class="nome">
+                <td class="info-nome">Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr class="nome">
+                <td class="info-nome">Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <button id="botao-importa" class="btn btn-primary" type="button">Importar</button>
 
     <div id="negociacoesView"></div>
 </body>
+<script src="js/filtra.js"></script>
+
 </html>
