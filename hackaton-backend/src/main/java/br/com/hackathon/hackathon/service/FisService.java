@@ -3,6 +3,7 @@ package br.com.hackathon.hackathon.service;
 import br.com.hackathon.hackathon.dto.FisDTO;
 import br.com.hackathon.hackathon.entities.SolicitacaoDeFiscalizacao;
 import br.com.hackathon.hackathon.repository.FisRepository;
+import br.com.hackathon.hackathon.translator.FisTranslator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

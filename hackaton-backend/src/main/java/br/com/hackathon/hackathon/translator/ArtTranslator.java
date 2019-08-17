@@ -1,10 +1,9 @@
 package br.com.hackathon.hackathon.translator;
 
-import org.springframework.stereotype.Component;
-
 import br.com.hackathon.hackathon.dto.ArtDTO;
 import br.com.hackathon.hackathon.entities.AnotacaoDeResponsabilidadeTecnica;
 import br.com.hackathon.hackathon.entities.ArtId;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ArtTranslator {
@@ -12,9 +11,7 @@ public class ArtTranslator {
 	public AnotacaoDeResponsabilidadeTecnica toEntity(ArtDTO dto) {
 		ArtId id = ArtId.of(dto.getIdArtNacional(), dto.getNumeroArt(), dto.getProprietario());
 		
-		AnotacaoDeResponsabilidadeTecnica art = new AnotacaoDeResponsabilidadeTecnica(id, dto.getData(), dto.getModalidade());
-		
-		return art;
+		return new AnotacaoDeResponsabilidadeTecnica(id, dto.getData(), dto.getModalidade());
 	}
 	
 	public ArtDTO toDto(AnotacaoDeResponsabilidadeTecnica art) {

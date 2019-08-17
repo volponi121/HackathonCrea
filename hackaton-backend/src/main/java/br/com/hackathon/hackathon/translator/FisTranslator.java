@@ -1,4 +1,4 @@
-package br.com.hackathon.hackathon.service;
+package br.com.hackathon.hackathon.translator;
 
 import br.com.hackathon.hackathon.dto.FisDTO;
 import br.com.hackathon.hackathon.entities.SolicitacaoDeFiscalizacao;

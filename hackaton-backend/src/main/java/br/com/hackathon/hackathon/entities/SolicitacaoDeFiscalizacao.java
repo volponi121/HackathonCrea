@@ -35,7 +35,6 @@ public class SolicitacaoDeFiscalizacao {
     @Column(name = "SITUACAO_ATUAL")
     private String situacaoAtual;
 
-    @Lob
     @Setter
     @Column(name = "PROCESSOS_VINCULADOS")
     private String processosVinculados;

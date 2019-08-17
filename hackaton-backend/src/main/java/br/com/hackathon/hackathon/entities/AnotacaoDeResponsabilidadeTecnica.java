@@ -29,7 +29,6 @@ public class AnotacaoDeResponsabilidadeTecnica implements Serializable{
 
 	@Column(name = "MODALIDADE")
 	private String modalidade;
-
 	
 	public Long getIdArtNacional() {
 		return this.id.getIdArtNacional();
