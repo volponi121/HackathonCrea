@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class SolicitacaoDeFiscalizacao {
 
     @Id
-    @Column(name = "IDFIS")
+    @Column(name = "ID_FIS")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
