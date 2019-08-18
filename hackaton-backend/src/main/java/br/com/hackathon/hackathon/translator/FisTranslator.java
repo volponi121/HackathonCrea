@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class FisTranslator {
 
     public SolicitacaoDeFiscalizacao toEntity(FisDTO dto) {
-        return new SolicitacaoDeFiscalizacao(dto.getNumeroSolicitacao(), dto.getDataSolicitacao(), dto.getTipoSolicitacao(), dto.getSituacaoAtual(), dto.getProcessosVinculados());
+        return new SolicitacaoDeFiscalizacao(dto.getId(),dto.getNumeroSolicitacao(), dto.getDataSolicitacao(), dto.getTipoSolicitacao(), dto.getSituacaoAtual(), dto.getProcessosVinculados());
     }
 
     public FisDTO toDto(SolicitacaoDeFiscalizacao entity) {
