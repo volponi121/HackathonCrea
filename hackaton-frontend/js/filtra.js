@@ -6,11 +6,11 @@ campoFiltro.addEventListener("input", function() {
     if (this.value.length > 0) {
         for (var i = 0; i < dados.length; i++) {
             var empresa = dados[i];
-            var tdNome = empresa.querySelector(".info-nome");
+            var tdNome = empresa.querySelector(".info-proprietario");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i");
 
-            if (!expressao.test(nome)) {
+            if (!expressao.test(nome)&&(!expressao.test())) {
                 empresa.classList.add("invisivel");
             } else {
                 empresa.classList.remove("invisivel");

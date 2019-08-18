@@ -13,8 +13,10 @@ botaoAdicionar.addEventListener("click", function() {
             var resposta = xhr.responseText;
             var dados = JSON.parse(resposta);
 
-            dados.forEach(function(empresa) {
-                adicionaPacienteNaTabela(empresa);
+            console.log(resposta);
+
+            dados.forEach(function(art) {
+                adicionaArtNaTabela(art);
             });
         } else {
             erroAjax.classList.remove("invisivel");
