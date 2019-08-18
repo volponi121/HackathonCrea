@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ART</title>
+    <title>FIS</title>
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <link rel="stylesheet" href="materialize/css/estilo.css">
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
@@ -11,20 +11,21 @@
 
 <body class="container">
 
-    <h1>Requisições</h1>
+    <h1>Solicitação de Fiscalização</h1>
 
     <br>
     <br>
-    <label for="filtrar-tabela">Digite o nome do proprietário:</label>
+    <label for="filtrar-tabela">Digite o número da solicitação:</label>
     <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite...">
     <table class="striped highlight">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Numero</th>
-                <th>Data</th>
-                <th>Modalidade</th>
-                <th>Proprietário</th>
+                <th>Número da Solicitação</th>
+                <th>Data Solicitação</th>
+                <th>Tipo de Solicitação</th>
+                <th>Situação Atual</th>
+                <th>Processos Vinculados</th>
             </tr>
         </thead>
 
@@ -44,7 +45,7 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/ART/filtra.js"></script>
-<script src="js/ART/novoTeste.js"></script>
-<script src="js/ART/buscar-dados.js"></script>
+<script src="js/FIS/filtra.js"></script>
+<script src="js/FIS/novoTeste.js"></script>
+<script src="js/FIS/buscar-dados.js"></script>
 </html>
