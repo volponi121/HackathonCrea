@@ -10,7 +10,7 @@ campoFiltro.addEventListener("input", function() {
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i");
 
-            if (!expressao.test(nome)&&(!expressao.test())) {
+            if (!expressao.test(nome)) {
                 empresa.classList.add("invisivel");
             } else {
                 empresa.classList.remove("invisivel");
