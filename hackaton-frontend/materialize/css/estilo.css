@@ -1,3 +1,10 @@
 .invisivel {
     display: none;
 }
+
+.centro {
+   text-align: center;
+}
+.esquerda {
+   text-align: right;
+}

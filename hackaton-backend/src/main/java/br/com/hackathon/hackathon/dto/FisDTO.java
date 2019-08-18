@@ -15,7 +15,7 @@ public class FisDTO {
 
     private String tipoSolicitacao;
 
-    private String situcaoAtual;
+    private String situacaoAtual;
 
     private String processosVinculados;
 }
