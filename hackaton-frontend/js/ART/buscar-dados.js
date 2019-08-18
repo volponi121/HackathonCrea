@@ -3,7 +3,7 @@ var botaoAdicionar = document.querySelector("#buscar-dados");
 botaoAdicionar.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "http://localhost:8080/art/all");
+    xhr.open("GET", "http://192.168.88.170:8080/art/all");
 
     
 
