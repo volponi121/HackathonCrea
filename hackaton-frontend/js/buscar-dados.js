@@ -3,7 +3,9 @@ var botaoAdicionar = document.querySelector("#buscar-dados");
 botaoAdicionar.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+    xhr.open("GET", "http://localhost:8080/art/all");
+
+    
 
     xhr.addEventListener("load", function() {
         var erroAjax = document.querySelector("#erro-ajax");

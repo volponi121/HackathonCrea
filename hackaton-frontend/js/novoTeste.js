@@ -46,7 +46,7 @@ function montaTd(dado, classe) {
 }
 
 function adicionaArtNaTabela(art) {
-    var artTr = montaTr(art);
+    var artTr = montaTrArt(art);
     var tabela = document.querySelector("#tabela-dados");
     tabela.appendChild(artTr);
 }
