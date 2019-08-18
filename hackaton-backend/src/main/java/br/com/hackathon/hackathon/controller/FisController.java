@@ -22,8 +22,8 @@ public class FisController {
     }
 
     @GetMapping("/{id}")
-    public FisDTO getById(@RequestParam("id") Long id){
-        return fisService.findById(id);
+    public FisDTO getById(@PathVariable("id") Long id){
+        return fisService.findById(id);	
     }
 
     @PostMapping
