@@ -1,7 +1,7 @@
 var campoFiltro = document.querySelector("#filtrar-tabela");
 
 campoFiltro.addEventListener("input", function() {
-    var dados = document.querySelectorAll(".nome");
+    var dados = document.querySelectorAll(".art");
 
     if (this.value.length > 0) {
         for (var i = 0; i < dados.length; i++) {
@@ -10,7 +10,7 @@ campoFiltro.addEventListener("input", function() {
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i");
 
-            if (!expressao.test(nome)&&(!expressao.test())) {
+            if (!expressao.test(nome)) {
                 empresa.classList.add("invisivel");
             } else {
                 empresa.classList.remove("invisivel");
